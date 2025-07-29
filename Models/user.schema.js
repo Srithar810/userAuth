@@ -17,22 +17,22 @@ const userSchema = new mongoose.Schema(
             lowercase:true,
             required:true,
             trim:true,
-            // validate(value){
-            //     if(!validator.isEmail(value)){
-            //         throw new Error ("Invalid Email Address :"+ value)
-            //     }
-            // },
+            validate(value){
+                if(!validator.isEmail(value)){
+                    throw new Error ("Invalid Email Address :"+ value)
+                }
+            },
 
         },
         password:{
             type:String,
             required:true,
-            // validate(value){
-            //     if(!validator.isStrongPassword(value)){
-            //         throw new Error("Enter a Strong Password: "+value);
+            validate(value){
+                if(!validator.isStrongPassword(value)){
+                    throw new Error("Enter a Strong Password: "+value);
 
-            //     }
-            // },
+                }
+            },
         },
         age:{
             type:Number,
@@ -56,9 +56,8 @@ const userSchema = new mongoose.Schema(
                 }
             },
         },
-        about:{
+        token:{
             type:String,
-            default:"This is user Authenticate and Authorization part of the user"
         },
         role:{
             type:[String],
