@@ -63,25 +63,5 @@ It supports **user registration**, **login with JWT**, and **access control** us
 
 ---
 
-### 🧪 Sample Requests
 
-#### 🔐 Register
-
-```http
-POST /api/auth/register
-{
-  "username": "srithar_dev",
-  "emailId": "srithar@example.com",
-  "password": "Strong@123",
-  "age": 22,
-  "gender": "male"
-}
-
-#### Login
-
-{
-  "emailId": "srithar@example.com",
-  "password": "Strong@123"
-}
-🔒 Get All Users (Admin Only)
 
