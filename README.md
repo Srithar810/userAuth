@@ -83,38 +83,5 @@ POST /api/auth/register
   "emailId": "srithar@example.com",
   "password": "Strong@123"
 }
-🔒 Get All Users (Admin only)
-
-GET /api/auth/getUser
-Headers:
-Authorization: Bearer <JWT_TOKEN>
-
-🔧 .env Configuration
-Create a .env file like this:
-
-PORT=5000
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-
-🚀 Getting Started
-npm install
-npm run dev
-
-Open your browser or Postman at: http://localhost:5000
-
-🧰 Tech Used
-Express.js
-
-MongoDB + Mongoose
-
-JWT
-
-bcrypt
-
-dotenv
-
-validator
-
-🙋 Author
-Made with  by Srithar Srinivasan
+🔒 Get All Users (Admin Only)
 
