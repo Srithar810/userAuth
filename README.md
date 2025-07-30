@@ -64,13 +64,14 @@ It supports **user registration**, **login with JWT**, and **access control** us
 ---
 
 🧼 Validation & Security
-Email, password, and URL validations with validator
 
-Passwords are hashed with bcrypt
+. Email, password, and URL validations with validator
 
-JWT expires in 1 hour
+. Passwords are hashed with bcrypt
 
-Role-based access with middleware
+. JWT expires in 1 hour
+
+. Role-based access with middleware
 
 🧾 User Schema Summary
 | Field    | Type      | Required | Notes                                |
