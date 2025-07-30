@@ -17,6 +17,7 @@ const userSchema = new mongoose.Schema(
             lowercase:true,
             required:true,
             trim:true,
+            unique:true,
             validate(value){
                 if(!validator.isEmail(value)){
                     throw new Error ("Invalid Email Address :"+ value)
@@ -60,7 +61,9 @@ const userSchema = new mongoose.Schema(
             type:String,
         },
         role:{
-            type:[String],
+            type:String,
+            enum:["Admin","User"],
+            default:"User",
         },
     },
     {
