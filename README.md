@@ -63,5 +63,31 @@ It supports **user registration**, **login with JWT**, and **access control** us
 
 ---
 
+🧼 Validation & Security
+Email, password, and URL validations with validator
+
+Passwords are hashed with bcrypt
+
+JWT expires in 1 hour
+
+Role-based access with middleware
+
+🧾 User Schema Summary
+| Field    | Type      | Required | Notes                                |
+| -------- | --------- | -------- | ------------------------------------ |
+| username | String    | ✅        | 4–40 characters                      |
+| emailId  | String    | ✅        | Must be a valid email, unique        |
+| password | String    | ✅        | Must be a strong password            |
+| age      | Number    | ❌        | Minimum: 18                          |
+| gender   | String    | ❌        | One of: male, female, others         |
+| photoUrl | String    | ❌        | Must be a valid URL                  |
+| role     | \[String] | ❌        | Default: `User`, or manually `Admin` |
+| token    | String    | ❌        | Stores JWT token                     |
+
+
+
+
+🙋 Author
+Made by Srithar Srinivasan
 
 
